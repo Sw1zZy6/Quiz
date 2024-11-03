@@ -164,6 +164,7 @@ func main() {
 	r.HandleFunc("/users/{id}", getUser).Methods("GET")
 	r.HandleFunc("/users/{id}", updateUsername).Methods("PUT")
 	r.HandleFunc("/users/{id}", deleteUser).Methods("DELETE")
+
 	
 	fmt.Println("Starting server on port 8000")
 	log.Fatal(http.ListenAndServe(":8000", handlers.CORS(

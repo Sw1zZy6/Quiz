@@ -1,0 +1,113 @@
+body, html {
+    height: 100%;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background:url(../imgs/colorful-backgrounds-wallpapers-30-pack-get-your-teach-on-832776.webp);
+    filter: blur(30px);
+    -webkit-filter: blur(1px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 17, 19, 0.829); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid rgba(0, 17, 19, 0.801);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 60%;
+    width: 70%;
+
+}
+
+.headers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-style:oblique;
+    font-stretch: expanded;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+#form {
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) ;
+}
+
+.input-sections {
+    display: flex;             
+    flex-direction: column;
+    align-items: center;        
+    justify-content: center;
+    height: 120px;
+
+}
+
+.input-name {
+    width: 70%;
+    max-width: 400px;
+}
+
+.input-field {
+    width: 70%;               
+    max-width: 400px;         
+    padding: 10px;            
+    border: 1px solid rgba(255, 255, 255, 0.8); 
+    border-radius: 5px;       
+
+}
+
+
+
+.submit-container {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#submit {
+    height: 30px;
+    width: 20%;
+    max-width: 100px;
+}
+
+#switch-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+#account-question {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#login-link {
+    cursor: pointer;
+    margin-left: 15px;
+    color: rgb(101, 101, 241);
+    transition: .5s; 
+}
+#login-link:hover {
+  transform: scale(1.25);
+    color: white;
+}
